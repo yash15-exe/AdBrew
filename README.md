@@ -24,7 +24,7 @@ git clone https://github.com/adbrew/test.git
 ```
 2. Change into the cloned directory and set the environment variable for the code path. Replace `path_to_repository` appropriately.
 ```
-export ADBREW_CODEBASE_PATH="{path_to_repository}/test/src"
+export ADBREW_CODEBASE_PATH="{path_to_repository}"
 ```
 3. Build container (you only need to build containers for the first time or if you change image definition, i.e., `Dockerfile`). This step will take a good amount of time.
 ```
