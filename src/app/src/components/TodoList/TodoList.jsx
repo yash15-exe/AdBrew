@@ -22,7 +22,6 @@ export default function TodoList({
   };
 
   const handleDelete = async (todoId) => {
-    if (!confirm("Delete this todo permanently?")) return; // ← Added confirm back!
 
     setProcessingId(todoId);
     try {

@@ -14,6 +14,9 @@ This repository includes code for a Docker setup with 3 containers:
 
 We highly recommend you go through the setup in `Dockerfile` and `docker-compose.yml`. If you are able to understand and explain the setup, that will be a huge differentiator.
 
+# Output
+![AdBrew Test Architecture](image.png)
+
 # Setup
 1. Clone this repository (DO NOT FORK)
 ```

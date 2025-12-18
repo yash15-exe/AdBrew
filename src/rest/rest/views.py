@@ -164,7 +164,7 @@ class TodoListView(APIView):
 
             if result.deleted_count == 0:
                 return Response({"error": "Failed to delete"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+            return Response(status=status.HTTP_204_NO_CONTENT)
 
 
         except AuthenticationError as e:
