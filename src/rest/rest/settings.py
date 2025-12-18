@@ -22,9 +22,9 @@ sys.path.append(os.path.join(BASE_DIR, ".."))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-SECRET_KEY = '00000000000000000000000000000000000000000000000000'
+SECRET_KEY = '87987987897987897846545489746546876799876331'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost']
 
@@ -133,4 +133,9 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = (
+    *default_headers,
+    'x-user-id',
+    'X-User-ID',
+)
 

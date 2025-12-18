@@ -1,0 +1,81 @@
+.todo-form {
+  border: 2px solid #000000;
+  padding: 20px;
+  margin: 30px 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.todo-form__title {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+}
+
+.todo-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.todo-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.todo-form__field label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.todo-form__field textarea {
+  padding: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  min-height: 140px;         
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  resize: vertical;         
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.todo-form__field textarea:focus {
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+.todo-form button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  background: none;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+.todo-form button:hover:not(:disabled) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.todo-form button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  color: #111111;
+}
+
+.todo-form__error {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: left;
+  padding: 8px;
+  border: 1px dashed #000000;
+  background-color: #f0f0f0;
+}

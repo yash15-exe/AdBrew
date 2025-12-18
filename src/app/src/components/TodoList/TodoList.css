@@ -1,0 +1,112 @@
+.todo-list {
+  width: 100%;
+}
+
+.todo-list__title {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.todo-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.todo-list__item--completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-list__description {
+  flex: 1;
+  word-break: break-word;
+}
+
+.todo-list__actions {
+  display: flex;
+  gap: 20px;
+}
+
+.todo-list__toggle-btn,
+.todo-list__delete-btn {
+  background: none;
+  border: 2px solid #000000;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.todo-list__toggle-btn:hover:not(:disabled),
+.todo-list__delete-btn:hover:not(:disabled) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.todo-list__message {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  padding: 40px 0;
+  text-align: center;
+  border: 1px dashed #000000;
+  margin: 20px 0;
+}
+
+.todo-list__message--error {
+  border-color: #000000;
+  background-color: #f0f0f0;
+}
+.todo-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  gap: 20px; 
+}
+
+.todo-list__number {
+  flex: 0 0 40px;
+  text-align: right;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.todo-list__description {
+  flex: 1;
+  word-break: break-word;
+  padding-right: 20px;
+}
+
+.todo-list__actions {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.todo-list__item:last-child {
+  border-bottom: none;
+}
